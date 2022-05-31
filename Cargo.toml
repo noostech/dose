@@ -1,0 +1,12 @@
+[package]
+name = "dose"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dose-derive = { path = "./dose-derive" }
+log = "0.4.0"
+
+[dev-dependencies]
+fake = "2.4"
+rand = "0.8"
