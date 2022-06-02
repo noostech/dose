@@ -37,7 +37,7 @@ fn provider_impl(args: &syn::AttributeArgs, input: &syn::ItemFn) -> TokenStream 
     };
 
     let gen = quote! {
-        impl crate::Injector<#output_type_name #output_type_params> for dose::Context<#config_type_name> {
+        impl crate::dose_private::Injector<#output_type_name #output_type_params> for dose::Context<#config_type_name> {
             fn get(&mut self) -> #output_type_name #output_type_params {
                 #fn_call
             }
