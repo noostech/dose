@@ -4,10 +4,10 @@
 
 ## Features
 
-* Blazingly Fast
-* Dependency Injection
-* Statically Checked 
-* No Runtime Dependency Graph
+* Blazingly Fast 🏎💨
+* Dependency Injection 💉
+* Statically Checked 🕵️‍♀️
+* No Runtime Dependency Graph ✨
 
 Unfortunately we do not support runtime dependency cycle detection ... yet.
 
