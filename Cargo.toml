@@ -1,6 +1,6 @@
 [package]
 name = "dose"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Your daily dose of structs and functions."
 license = "GPL-3.0-only"
@@ -11,7 +11,7 @@ members = [
 ]
 
 [dependencies]
-dose-derive = { version = "0.1.1", path = "./dose-derive" }
+dose-derive = { version = "0.1.2", path = "./dose-derive" }
 log = "0.4.0"
 
 [dev-dependencies]
