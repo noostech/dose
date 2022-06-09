@@ -3,7 +3,7 @@ name = "dose"
 version = "0.1.0"
 edition = "2021"
 description = "Your daily dose of structs and functions."
-license = "GNU-GPLv3"
+license = "GPL-3.0-only"
 
 [dependencies]
 dose-derive = { path = "./dose-derive" }
