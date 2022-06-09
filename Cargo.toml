@@ -5,8 +5,13 @@ edition = "2021"
 description = "Your daily dose of structs and functions."
 license = "GPL-3.0-only"
 
+[workspace]
+members = [
+    "dose-derive",
+]
+
 [dependencies]
-dose-derive = { path = "./dose-derive" }
+dose-derive = { version = "0.1.0", path = "./dose-derive" }
 log = "0.4.0"
 
 [dev-dependencies]
