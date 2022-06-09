@@ -1,4 +1,9 @@
-# Dose
+<div style="display: flex; justify-content: left; align-items: center; padding-bottom: 24px;">
+    <img src="./assets/dose.svg" width="100px" >
+    <span style="margin-left: 24px;font-size: 48px; font-weight: 500;">dose</span>
+</div>
+
+[![Current Crates.io Version](https://img.shields.io/crates/v/dose.svg)](https://crates.io/crates/dose)
 
 > Your daily dose of structs and functions.
 
