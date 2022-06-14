@@ -1,9 +1,12 @@
 [package]
 name = "dose-derive"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 description = "Attributes for dose"
 license = "GPL-3.0-only"
+repository = "https://github.com/noostech/dose"
+keywords = ["dependency", "injection", "static", "resolver", "provider"]
+categories = ["development-tools::testing"]
 
 [lib]
 proc-macro = true
