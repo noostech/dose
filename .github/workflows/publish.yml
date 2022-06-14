@@ -6,8 +6,8 @@ on:
       - '*'
 
 jobs:
-  publish:
-    name: publish
+  publish-dose-derive:
+    name: publish-dose-derive
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -20,7 +20,27 @@ jobs:
           toolchain: stable
           override: true
 
-      - name: publish to crates.io
-        run: ./ci/publish.sh
+      - name: publish dose-derive to crates.io
+        run: ./ci/publish.sh dose-derive
+        env:
+          CRATES_IO_API_TOKEN: ${{ secrets.CRATES_IO_API_TOKEN }}
+
+  publish-dose:
+    needs: publish-dose-derive
+    name: publish-dose
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: install rust stable
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: publish dose to crates.io
+        run: ./ci/publish.sh dose
         env:
           CRATES_IO_API_TOKEN: ${{ secrets.CRATES_IO_API_TOKEN }}
